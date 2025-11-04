@@ -1,65 +1,167 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+:root {
+  --color-primario: #10b981;
+  --color-secundario: #d1fae5;
+  --color-fondo: #0f172a;
+  --color-texto: #f9fafb;
+  --color-gris: #9ca3af;
+  --color-hover: #34d399;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url();
+/* GENERAL */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
-
-
-
-#hero-inicio{
-    width: 100%;
-    height: 94vh;
-    background-image: url(/Imagenes/hero-index.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    background-blend-mode: multiply;
+/* NAVBAR */
+.navbar {
+  background: transparent !important;
+  transition: all 0.3s ease-in-out;
 }
 
-.navegacion{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1.2rem;
-    
+.navbar a {
+  color: var(--color-texto) !important;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.link-item{
-    text-decoration: none;
-    color: black;
+.navbar a:hover {
+  color: var(--color-primario) !important;
 }
 
-
-.section-items{
-    list-style: none;
-    padding: .3rem 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border-top: 0.1rem solid black;
-    border-bottom:0.1rem solid black;
+/* BOTONES */
+.btn-primario {
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  transition: 0.3s;
 }
 
-
-.items .link-item{
-    transition: all;
-    padding: 0.2rem 0.7rem;
-    background-color: aqua;
+.btn-primario:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
 }
 
-.items .link-item{
-
+.btn-secundario {
+  border: 1px solid var(--color-primario);
+  color: var(--color-primario);
+  transition: 0.3s;
 }
 
+.btn-secundario:hover {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+/* SECCIONES */
+section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+#inicio {
+  background: linear-gradient(180deg, var(--color-fondo) 0%, #111827 100%);
+}
+
+#proyectos {
+  background: linear-gradient(180deg, #111827 0%, #1e293b 100%);
+}
+
+#habilidades {
+  background: linear-gradient(180deg, #1e293b 0%, #111827 100%);
+}
+
+h2, h1 {
+  color: var(--color-primario);
+}
+
+/* CARDS */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  border-bottom: 2px solid var(--color-primario);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* CONTACTO */
+#contacto {
+  background: linear-gradient(180deg, #111827 0%, var(--color-fondo) 100%);
+  text-align: center;
+}
+
+#contacto h2 {
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.descripcion-contacto {
+  color: var(--color-gris);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  transition: 0.3s;
+}
+
+.contact-box:hover {
+  transform: scale(1.02);
+  border-color: var(--color-primario);
+}
+
+.btn-contacto {
+  background-color: var(--color-primario);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-contacto:hover {
+  background-color: var(--color-hover);
+  transform: translateY(-3px);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.icon-link {
+  color: var(--color-primario);
+  font-size: 1.8rem;
+  transition: 0.3s ease;
+}
+
+.icon-link:hover {
+  color: var(--color-hover);
+  transform: translateY(-4px);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem 0;
+}
