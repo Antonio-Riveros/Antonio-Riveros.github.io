@@ -5,7 +5,7 @@ Fue construido utilizando **HTML5**, **CSS3** y **Bootstrap 5**, con un diseño 
 
 ---
 
-## 📘 Descripción general
+## Descripción general
 
 El sitio está organizado en secciones que reflejan mis principales áreas de trabajo y experiencia:
 
@@ -16,7 +16,7 @@ El sitio está organizado en secciones que reflejan mis principales áreas de tr
 
 ---
 
-## 🧩 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - **HTML5** — estructura del sitio
 - **CSS3** — estilos personalizados y efectos visuales
