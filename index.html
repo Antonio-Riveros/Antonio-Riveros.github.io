@@ -3,27 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - Antonio Riveros</title>
-
+  <title>Antonio Riveros | Técnico en Programación</title>
+  
   <!-- Bootstrap y Iconos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Tu hoja de estilos -->
-  <link href="css/hojas-index/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos personalizada -->
+  <link rel="stylesheet" href="css/hojas-index/index.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="#">Antonio Riveros</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <a class="navbar-brand" href="#inicio">
+        <span class="brand-text">AR</span>
+        <span class="brand-name">Antonio Riveros</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="menu">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
           <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -32,99 +41,569 @@
     </div>
   </nav>
 
-  <!-- INICIO -->
-  <section id="inicio" class="text-center container">
-    <h1 class="fw-bold mb-3">¡Hola! Soy Antonio Riveros</h1>
-    <p class="lead text-light mb-4">Técnico Universitario En Programación </p>
-    <a href="#proyectos" class="btn btn-primario me-2">Ver proyectos</a>
-    <a href="#contacto" class="btn btn-secundario">Contacto</a>
-  </section>
-
-<!-- PROYECTOS -->
-<section id="proyectos">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Proyectos destacados</h2>
-      <p class="text-secondary">Algunos trabajos que representan mi experiencia.</p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Receta Smart -->
-      <div class="col-md-4">
-        <a href="https://recetasmart.pythonanywhere.com" class="text-decoration-none">
-          <div class="card bg-dark text-light h-100">
-            <div class="card-body">
-              <h5 class="fw-semibold">Receta Smart</h5>
-              <p class="text-secondary">
-                Plataforma inteligente para gestión y análisis de recetas médicas,
-                con control de vencimientos y organización digital.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- CasaMia -->
-      <div class="col-md-4">
-        <a href="https://CasaMia.pythonanywhere.com" class="text-decoration-none">
-          <div class="card bg-dark text-light h-100">
-            <div class="card-body">
-              <h5 class="fw-semibold">CasaMia</h5>
-              <p class="text-secondary">
-                Sistema web orientado a inmobiliarias para la gestión de propiedades,
-                publicaciones y contacto con potenciales clientes.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      
-    </div>
-  </div>
-</section>
-
-  <!-- HABILIDADES -->
-  <section id="habilidades" class="text-center">
+  <!-- Sección de Inicio/Hero -->
+  <section id="inicio" class="hero-section">
     <div class="container">
-      <h2 class="fw-bold mb-4">Habilidades y herramientas</h2>
-      <p class="text-light mb-5">Tecnologías que uso para construir soluciones efectivas.</p>
-
-      <div class="row g-4 justify-content-center">
-        <div class="col-6 col-md-2"><i class="bi bi-code-slash fs-1 text-success"></i><h6 class="mt-2">Python</h6></div>
-        <div class="col-6 col-md-2"><i class="bi bi-braces fs-1 text-success"></i><h6 class="mt-2">Django</h6></div>
-        <div class="col-6 col-md-2"><i class="bi bi-database fs-1 text-success"></i><h6 class="mt-2">MySQL</h6></div>
-        <div class="col-6 col-md-2"><i class="bi bi-filetype-html fs-1 text-success"></i><h6 class="mt-2">HTML / CSS / JS</h6></div>
-        <div class="col-6 col-md-2"><i class="bi bi-git fs-1 text-success"></i><h6 class="mt-2">Git</h6></div>
-        <div class="col-6 col-md-2"><i class="bi bi-github fs-1 text-success"></i><h6 class="mt-2">GitHub</h6></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO (rediseñado) -->
-  <section id="contacto">
-    <div class="container text-center">
-      <h2 class="fw-bold">Hablemos 👋</h2>
-      <p class="descripcion-contacto">¿Tenés un proyecto o idea? Estoy siempre abierto a nuevas oportunidades.</p>
-
-      <div class="contact-box mx-auto p-4 mt-4">
-        <a href="mailto:antonio.n.riveros18@example.com" class="btn-contacto">
-          <i class="bi bi-envelope me-2"></i>Enviame un mensaje
-        </a>
-
-        <div class="social-icons mt-4">
-          <a href="https://www.linkedin.com/in/antonio-riveros-b7a558281/?trk=opento_sprofile_details" class="icon-link"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/Antonio-Riveros" class="icon-link"><i class="bi bi-github"></i></a>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <div class="badge-container">
+              <span class="badge">Técnico Universitario en Programación</span>
+            </div>
+            <h1 class="hero-title">Transformo ideas en <span class="highlight">soluciones digitales</span></h1>
+            <p class="hero-text">Desarrollo aplicaciones web eficientes, escalables y centradas en el usuario. Mi objetivo es crear tecnología que simplifique procesos y mejore experiencias.</p>
+            <div class="hero-buttons">
+              <a href="#proyectos" class="btn btn-primary">Ver proyectos <i class="bi bi-arrow-right"></i></a>
+              <a href="#contacto" class="btn btn-outline">Contactar</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">1+</span>
+                <span class="stat-label">Años de experiencia</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Proyectos completados</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Compromiso</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-container">
+            <div class="hero-image-wrapper">
+              <!-- <img src="" alt="Antonio Riveros" class="hero-image"> -->
+              <div class="image-overlay"></div>
+            </div>
+            <div class="tech-badge">
+              <i class="fab fa-python"></i>
+              <span>Python/Django</span>
+            </div>
+            <div class="tech-badge">
+              <i class="fas fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="tech-badge">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center">
-    <small>&copy; 2025 Antonio Riveros — Portfolio Personal</small>
+  <!-- Sección Sobre Mí -->
+  <section id="sobre-mi" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre <span class="highlight">mí</span></h2>
+        <p class="section-subtitle">Conoce mi trayectoria y enfoque de trabajo</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="about-card">
+            <div class="about-icon">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <h3>Formación</h3>
+            <p>Técnico Universitario en Programación con formación sólida en desarrollo de software, algoritmos y estructuras de datos.</p>
+            <p class="about-detail"><strong>Enfoque:</strong> Desarrollo con Python/Django</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="about-card">
+            <div class="about-icon">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <h3>Gustos</h3>
+            <p>Empece con esto aproximadamente en 2022 mientras estaba en mi secundaria y apenas termine supe que tenia que seguir aprendiendo sobre esto ya que puedo ayudar a muchisimas personas</p>
+            <p class="about-detail"><strong>Principio:</strong> Primero resolver el problema, luego escribir el código</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="about-card">
+            <div class="about-icon">
+              <i class="bi bi-rocket-takeoff"></i>
+            </div>
+            <h3>Objetivos</h3>
+            <p>Busco colaborar en proyectos desafiantes que me permitan crecer profesionalmente mientras aporto valor con mis habilidades técnicas.</p>
+            <p class="about-detail"><strong>Meta:</strong> Especializarme en arquitectura de software</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-cta">
+        <p>¿Buscas un desarrollador comprometido y con atención al detalle? <a href="#contacto">Hablemos</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Proyectos <span class="highlight">destacados</span></h2>
+        <p class="section-subtitle">Soluciones prácticas desarrolladas con las mejores tecnologías</p>
+      </div>
+      
+      <!-- Proyecto 1: Receta Smart -->
+      <div class="project-card">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="project-image-container">
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Receta Smart" class="project-image">
+              <div class="project-tech-stack">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="project-content">
+              <div class="project-number">01</div>
+              <h3 class="project-title">Receta Smart</h3>
+              <p class="project-description">Plataforma web inteligente para la gestión y análisis de recetas médicas, con control de vencimientos, organización digital y alertas automatizadas.</p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Control de vencimientos automatizado</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Búsqueda inteligente de medicamentos</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Reportes y estadísticas de uso</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://recetasmart.pythonanywhere.com" target="_blank" class="btn btn-primary">
+                  <i class="bi bi-eye"></i> Ver proyecto
+                </a>
+                <a href="https://github.com/Antonio-Riveros/RecetasSmart-Django" target="_blank" class="btn btn-secondary">
+                  <i class="bi bi-code-slash"></i> Ver código
+                </a>
+                <button class="btn btn-outline" onclick="showProjectDetails('receta-smart')">
+                  <i class="bi bi-info-circle"></i> Más información
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Proyecto 2: CasaMia -->
+      <div class="project-card reverse">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="project-image-container">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=773&q=80" alt="CasaMia" class="project-image">
+              <div class="project-tech-stack">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="project-content">
+              <div class="project-number">02</div>
+              <h3 class="project-title">CasaMia</h3>
+              <p class="project-description">Sistema web integral para inmobiliarias que permite gestionar propiedades, publicaciones, contactos con clientes y generar informes de gestión.</p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Catálogo de propiedades con filtros avanzados</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Sistema de contacto integrado</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>Panel de administración completo</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://CasaMia.pythonanywhere.com" target="_blank" class="btn btn-primary">
+                  <i class="bi bi-eye"></i> Ver proyecto
+                </a>
+                <a href="https://github.com/Antonio-Riveros/CasaMia" target="_blank" class="btn btn-secondary">
+                  <i class="bi bi-code-slash"></i> Ver código
+                </a>
+                <button class="btn btn-outline" onclick="showProjectDetails('casamia')">
+                  <i class="bi bi-info-circle"></i> Más información
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sección Proyectos Académicos -->
+<section id="academicos" class="academic-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Proyectos <span class="highlight">Académicos</span></h2>
+      <p class="section-subtitle">Trabajos realizados durante mi formación universitaria</p>
+    </div>
+    
+    <div class="row">
+      <!-- Proyecto de Examen -->
+      <div class="col-lg-6 mb-4">
+        <div class="academic-card">
+          <div class="academic-header">
+            <div class="academic-icon">
+              <i class="bi bi-clipboard-check"></i>
+            </div>
+            <div class="academic-tags">
+              <span class="academic-tag examen">Examen Final</span>
+              <span class="academic-tag grupal">Proyecto Grupal</span>
+              <span class="academic-tag python">Python</span>
+              <span class="academic-tag django">Django</span>
+            </div>
+          </div>
+          <h3 class="academic-title">MarketPlace</h3>
+          <p class="academic-description">
+            Plataforma desarrollada como una imitacion a "Facebook MarketPlace"
+          </p>
+          <div class="academic-features">
+            <div class="academic-feature">
+              <i class="bi bi-clock"></i>
+              <span>Logueo con google y github</span>
+            </div>
+            <div class="academic-feature">
+              <i class="bi bi-check-circle"></i>
+              <span>Integracion de IA y MercadoPago</span>
+            </div>
+            <div class="academic-feature">
+              <i class="bi bi-bar-chart"></i>
+              <span>CRUD para productos</span>
+            </div>
+          </div>
+          <div class="academic-links">
+            <a href="https://ingresantes.pythonanywhere.com" target="_blank" class="btn btn-primary">
+              <i class="bi bi-eye"></i> Ver proyecto
+            </a>
+            <button class="btn btn-outline" onclick="showProjectDetails('examen-final')">
+              <i class="bi bi-info-circle"></i> Detalles del proyecto
+            </button>
+          </div>
+          <div class="academic-meta">
+            <div class="meta-item">
+              <i class="bi bi-person"></i>
+              <span>Trabajo Grupal</span>
+            </div>
+            <div class="meta-item">
+              <i class="bi bi-calendar"></i>
+              <span>Noviembre 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Proyecto Grupal -->
+      <div class="col-lg-6 mb-4">
+        <div class="academic-card">
+          <div class="academic-header">
+            <div class="academic-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <div class="academic-tags">
+              <span class="academic-tag examen">Examen</span>
+              <span class="academic-tag python">Python</span>
+              <span class="academic-tag django">Django</span>
+              <span class="academic-tag mysql">MySQL</span>
+            </div>
+          </div>
+          <h3 class="academic-title">Sistema de Gestión Académica</h3>
+          <p class="academic-description">
+            Sistema integral desarrollado en equipo para la gestión de estudiantes, profesores y materias.
+            Incluye módulos de inscripción, calificaciones y asistencia.
+          </p>
+          <div class="academic-features">
+            <div class="academic-feature">
+              <i class="bi bi-person-plus"></i>
+              <span>Gestión de usuarios y roles</span>
+            </div>
+            <div class="academic-feature">
+              <i class="bi bi-journal"></i>
+              <span>Scrap para ver resultados de wikipedia</span>
+            </div>
+            <div class="academic-feature">
+              <i class="bi bi-calendar-week"></i>
+              <span>Descargar Informe</span>
+            </div>
+          </div>
+          <div class="academic-links">
+            <a href="https://ingresantes.pythonanywhere.com" target="_blank" class="btn btn-primary">
+              <i class="bi bi-eye"></i> Ver proyecto
+            </a>
+            <button class="btn btn-outline" onclick="showProjectDetails('proyecto-grupal')">
+              <i class="bi bi-info-circle"></i> Detalles del proyecto
+            </button>
+          </div>
+          <div class="academic-meta">
+            <div class="meta-item">
+              <i class="bi bi-people"></i>
+              <span>Trabajo Individual</span>
+            </div>
+            <div class="meta-item">
+              <i class="bi bi-calendar"></i>
+              <span>Noviembre 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="academic-notes">
+      <div class="note-icon">
+        <i class="bi bi-lightbulb"></i>
+      </div>
+      <p>Estos proyectos representan mi capacidad para aplicar conocimientos teóricos en soluciones prácticas, trabajando tanto de forma individual como en equipo.</p>
+    </div>
+  </div>
+</section>
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mis <span class="highlight">habilidades</span></h2>
+        <p class="section-subtitle">Tecnologías y herramientas que domino para crear soluciones efectivas</p>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Desarrollo Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-python"></i>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 90%"></div>
+                </div>
+                <span class="level-text">Avanzado</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="bi bi-braces"></i>
+                <span class="skill-name">Django</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 85%"></div>
+                </div>
+                <span class="level-text">Avanzado</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-database"></i>
+                <span class="skill-name">MySQL</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 80%"></div>
+                </div>
+                <span class="level-text">Intermedio-Avanzado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="skill-category-title">Desarrollo Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-html5"></i>
+                <span class="skill-name">HTML5</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 85%"></div>
+                </div>
+                <span class="level-text">Avanzado</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-css3-alt"></i>
+                <span class="skill-name">CSS3</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 80%"></div>
+                </div>
+                <span class="level-text">Intermedio-Avanzado</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-js-square"></i>
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 75%"></div>
+                </div>
+                <span class="level-text">Intermedio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="skill-category-title">Herramientas</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-git-alt"></i>
+                <span class="skill-name">Git</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 80%"></div>
+                </div>
+                <span class="level-text">Intermedio-Avanzado</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fab fa-github"></i>
+                <span class="skill-name">GitHub</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 85%"></div>
+                </div>
+                <span class="level-text">Avanzado</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fas fa-terminal"></i>
+                <span class="skill-name">Terminal</span>
+              </div>
+              <div class="skill-level">
+                <div class="level-bar">
+                  <div class="level-progress" style="width: 80%"></div>
+                </div>
+                <span class="level-text">Intermedio-Avanzado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Trabajemos <span class="highlight">juntos</span></h2>
+        <p class="section-subtitle">¿Tienes un proyecto en mente? Hablemos sobre cómo puedo ayudarte</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="contact-card">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <a href="mailto:antonio.n.riveros18@example.com">antonio.n.riveros18@example.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/antonio-riveros-b7a558281/?trk=opento_sprofile_details" target="_blank">Antonio Riveros</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-github"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/Antonio-Riveros" target="_blank">Antonio-Riveros</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-cta">
+              <p>Estoy disponible para proyectos freelance, colaboraciones o oportunidades laborales.</p>
+              <a href="mailto:antonio.n.riveros18@example.com" class="btn btn-primary">
+                <i class="bi bi-send"></i> Enviar mensaje
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-text">AR</span>
+          <span class="brand-name">Antonio Riveros</span>
+          <p class="footer-tagline">Desarrollador backend especializado en Python/Django</p>
+        </div>
+        <div class="footer-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/antonio-riveros-b7a558281/?trk=opento_sprofile_details" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Antonio-Riveros" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="mailto:antonio.n.riveros18@example.com"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Antonio Riveros. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- Modal para detalles del proyecto -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProjectDetails()">&times;</button>
+      <h3 id="modalTitle">Detalles del proyecto</h3>
+      <div id="modalContent">
+        <!-- El contenido se llenará dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
