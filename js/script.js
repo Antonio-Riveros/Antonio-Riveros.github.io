@@ -9,20 +9,20 @@ const projectDetails = {
       <h4>Objetivos de Aprendizaje</h4>
       <ul>
         <li>Implementar un sistema de autenticación y autorización de usuarios</li>
-        <li>Crear un sistema de registro de productos que sean validos</li>
-        <li>Cerrar sesion de una cuenta con inactividad > 30mins </li>
-        <li>Generar Presupuestos con validez de 3 dias y que se mande al mail del usuario</li>
+        <li>Crear un sistema de registro de productos que sean válidos</li>
+        <li>Cerrar sesión de una cuenta con inactividad > 30 minutos</li>
+        <li>Generar presupuestos con validez de 3 días que se envíen al email del usuario</li>
         <li>Aplicar principios de UX/UI para una experiencia de usuario fluida</li>
-        <li>Integracion de MercadoPago como metodo de pago</li>
-        <li>Formas de loguearse, ya sea con google o github</li>
-        <li>Integrar IA como chat bot o que te recomiende precios para los productos que quieras publicar</li>
+        <li>Integración de MercadoPago como método de pago</li>
+        <li>Formas de iniciar sesión, ya sea con Google o GitHub</li>
+        <li>Integrar IA como chatbot o para recomendar precios para los productos que quieras publicar</li>
       </ul>
       
       <h4>Tecnologías Utilizadas</h4>
       <div class="tech-stack">
         <span class="tech-badge-modal">Django</span>
         <span class="tech-badge-modal">Python</span>
-        <span class="tech-badge-modal">Mysql</span>
+        <span class="tech-badge-modal">MySQL</span>
         <span class="tech-badge-modal">Bootstrap 5</span>
         <span class="tech-badge-modal">JavaScript Vanilla</span>
         <span class="tech-badge-modal">PythonAnywhere</span>
@@ -32,13 +32,13 @@ const projectDetails = {
       <ul>
         <li><strong>Sistema de usuarios:</strong> Roles diferenciados para administrador y usuario</li>
         <li><strong>Creación de Productos:</strong> Interfaz para que los usuarios creen productos</li>
-        <li><strong>Temporizador:</strong> Control de tiempo para desloguear a los usuarios inactivos</li>
-        <li><strong>Inteligencia Artificial:</strong> Chat bot para conversar y otro chat para que te recomiende un aprox de a cuando podes vender o comprar algo</li>
-        <li><strong>Reportes:</strong> Generación de presupuestos detallados para usuarios con validez de 3 dias aprox</li>
+        <li><strong>Temporizador:</strong> Control de tiempo para cerrar sesión a los usuarios inactivos</li>
+        <li><strong>Inteligencia Artificial:</strong> Chatbot para conversar y otro chat para que te recomiende un aproximado de a cuánto puedes vender o comprar algo</li>
+        <li><strong>Reportes:</strong> Generación de presupuestos detallados para usuarios con validez de 3 días aproximadamente</li>
       </ul>
       <h4>Desafíos del Trabajo en Equipo</h4>
       <p><strong>Desafío 1:</strong> Coordinar el trabajo de 3 personas con diferentes horarios.<br>
-      <strong>Solución:</strong> Establecimos reuniones fijas 1 vez por semana y usamos jira para seguimiento.</p>
+      <strong>Solución:</strong> Establecimos reuniones fijas 1 vez por semana y usamos Jira para seguimiento.</p>
       
       <p><strong>Desafío 2:</strong> Resolver conflictos de código y mantener consistencia.<br>
       <strong>Solución:</strong> Implementamos un flujo de trabajo Git con branches por funcionalidad y revisiones de código (code reviews).</p>
@@ -53,7 +53,7 @@ const projectDetails = {
       </ul>
       
       <h4>Lo que aprendí</h4>
-      <p>Este proyecto me permitió consolidar mis conocimientos en Django, especialmente en el trabajo de equipo y entender el panorama de que no todos podemos en el mimso momento, afianzar un poco mas sobre como integrar metodos de pagos o de como se generan los presupuestos </p>
+      <p>Este proyecto me permitió consolidar mis conocimientos en Django, especialmente en el trabajo en equipo y entender que no todos podemos trabajar al mismo tiempo, afianzar un poco más sobre cómo integrar métodos de pago o cómo se generan los presupuestos.</p>
     `
   },
   
@@ -99,7 +99,7 @@ const projectDetails = {
       
       <h4>Desafíos del Trabajo en Equipo</h4>
       <p><strong>Desafío 1:</strong> Coordinar el trabajo de 4 personas con diferentes horarios.<br>
-      <strong>Solución:</strong> Establecimos reuniones fijas 2 veces por semana y usamos GitHub Projects para seguimiento.</p>
+      <strong>Solución:</strong> Establecimos reuniones fijas dos veces por semana y usamos GitHub Projects para seguimiento.</p>
       
       <p><strong>Desafío 2:</strong> Resolver conflictos de código y mantener consistencia.<br>
       <strong>Solución:</strong> Implementamos un flujo de trabajo Git con branches por funcionalidad y revisiones de código (code reviews).</p>
@@ -124,9 +124,9 @@ const projectDetails = {
     content: `
       <h4>Origen del Proyecto</h4>
         <p>   
-            Receta Smart nació de una necesidad de ayudar a mi madre, ya que ella me contaba que ella tenia problemas con recordar el tiempo que tenia para comprar un medicamento antes de que se venciera la receta.
-            este mismo proyecto primero paso por una version donde solamente era de escritorio pero estuve pensando que como mi madre tenia el problemas otras personas tenian el mismo problema 
-            lo pase a django para que tenga una base de datos y se puedan registrar normalmente o con google
+            Receta Smart nació de una necesidad de ayudar a mi madre, ya que ella me contaba que tenía problemas para recordar el tiempo que tenía para comprar un medicamento antes de que se venciera la receta.
+            Este mismo proyecto primero pasó por una versión donde solamente era de escritorio, pero estuve pensando que así como mi madre tenía el problema, otras personas tenían el mismo problema, 
+            así que lo pasé a Django para que tenga una base de datos y se puedan registrar normalmente o con Google.
         </p>
       
       <h4>Desafíos Técnicos</h4>
@@ -159,8 +159,8 @@ const projectDetails = {
       <h4>Lo que aprendí</h4>
       <p>
       Este proyecto me permitió profundizar en el manejo de fechas y tiempos en aplicaciones web, 
-      la importancia de una buena experiencia de usuario ya que tiene que ser agil hasta para personas que no entiendan mucho sobre tecnologia
-      , y la eleccion sobre bases de datos para grandes volúmenes de información aunque todavia me falte integrarle un escaneo para las imagenes o pdfs que son imagenes.
+      la importancia de una buena experiencia de usuario ya que tiene que ser ágil incluso para personas que no entiendan mucho sobre tecnología,
+      y la elección de bases de datos para grandes volúmenes de información aunque todavía me falte integrarle un escaneo para las imágenes o PDFs que son imágenes.
       </p>
     `
   },
@@ -169,9 +169,9 @@ const projectDetails = {
     content: `
       <h4>Origen del Proyecto</h4>
       <p>
-        CasaMia fue el primer proyecto grupal que tuve alrededor de 2023 y empezo ya que un amigo 
-        tenia modelos hechos en figma, entonces con un amigo que queriamos practicar mas sobre html y css le dijimos que si podiamos usar los modelos y ahi nacio el primer modelo,
-        despues un profesor nos enseño django y me anime a darle vida completa a el primer proyecto grupal que tuve donde me manaje con trello y llamadas para confirmar cambios
+        CasaMia fue el primer proyecto grupal que tuve alrededor de 2023 y empezó porque un amigo 
+        tenía modelos hechos en Figma. Entonces, con otro amigo que queríamos practicar más sobre HTML y CSS, le dijimos que si podíamos usar los modelos y ahí nació el primer modelo.
+        Después, un profesor nos enseñó Django y me animé a darle vida completa al primer proyecto grupal que tuve, donde me manejé con Trello y llamadas para confirmar cambios.
       </p>
       
       <h4>Desafíos Técnicos</h4>
